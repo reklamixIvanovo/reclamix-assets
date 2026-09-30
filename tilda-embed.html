@@ -20,9 +20,9 @@
 #reclamix-landing .rx-wrap-wide{max-width:1280px}
 
 /* Header */
-#reclamix-landing .rx-usp{background:var(--rx-coral);color:#fff;font-size:13px}
-@media(min-width:640px){#reclamix-landing .rx-usp{font-size:14px}}
-#reclamix-landing .rx-usp-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+#reclamix-landing .rx-usp{background:var(--rx-coral);color:#fff;font-size:12px}
+@media(min-width:640px){#reclamix-landing .rx-usp{font-size:13px}}
+#reclamix-landing .rx-usp-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0}
 #reclamix-landing .rx-usp-list{display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap;min-width:0;flex:1}
 #reclamix-landing .rx-usp-list li{display:flex;align-items:center;gap:10px;font-weight:500}
 #reclamix-landing .rx-usp-list .rx-sep{width:1px;height:12px;background:rgba(255,255,255,.35)}
@@ -40,18 +40,27 @@
 #reclamix-landing .rx-usp-right a{font-weight:600}
 
 #reclamix-landing .rx-logo-row{border-bottom:1px solid rgba(0,0,0,.05);background:#fff}
-#reclamix-landing .rx-logo-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+#reclamix-landing .rx-logo-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0}
 #reclamix-landing .rx-logo img{height:44px;width:auto;object-fit:contain}
 @media(min-width:640px){#reclamix-landing .rx-logo img{height:52px}}
 @media(min-width:1024px){#reclamix-landing .rx-logo img{height:56px}}
 #reclamix-landing .rx-tagline{
   display:none;text-align:center;font-family:"GOST Type BU","Segoe UI",system-ui,sans-serif;
   font-weight:700;font-synthesis:weight;text-transform:uppercase;letter-spacing:.01em;
-  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;color:var(--rx-coral);
+  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;
+  background-image:linear-gradient(92deg,#111 0%,#111 9%,#e30513 17%,#ff4a3a 21%,#111 26%,#111 34%,#d02e1f 42%,#111 50%,#111 50%,#111 59%,#e30513 67%,#ff4a3a 71%,#111 76%,#111 84%,#d02e1f 92%,#111 100%)!important;
+  background-size:200% 100%!important;background-position:0% 50%;
+  -webkit-background-clip:text!important;background-clip:text!important;
+  color:transparent!important;-webkit-text-fill-color:transparent!important;
+  animation:rx-tagline 4.5s linear infinite;
+  filter:drop-shadow(.35px 0 0 rgb(10 10 10 / 35%)) drop-shadow(-.35px 0 0 rgb(227 5 19 / 25%));
+  will-change:background-position;
 }
 @media(min-width:1024px){#reclamix-landing .rx-tagline{display:block}}
-#reclamix-landing .rx-header-ctas{display:none;gap:12px;align-items:center}
+@keyframes rx-tagline{from{background-position:0% 50%}to{background-position:100% 50%}}
+#reclamix-landing .rx-header-ctas{display:none;gap:10px;align-items:center}
 @media(min-width:768px){#reclamix-landing .rx-header-ctas{display:flex}}
+#reclamix-landing .rx-header-ctas .rx-btn{padding:8px 14px;font-size:13px}
 #reclamix-landing .rx-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border:0;cursor:pointer;transition:.2s}
 #reclamix-landing .rx-btn-coral{background:var(--rx-coral);color:#fff}
 #reclamix-landing .rx-btn-coral:hover{background:var(--rx-red)}
@@ -79,6 +88,8 @@
 #reclamix-landing .rx-hero{position:relative;isolation:isolate;overflow:hidden;background:var(--rx-black);color:#fff}
 #reclamix-landing .rx-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 28%;opacity:.75}
 #reclamix-landing .rx-hero-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.65),rgba(0,0,0,.5),rgba(0,0,0,.78))}
+#reclamix-landing .rx-hero-glow{position:absolute;inset:0;pointer-events:none;opacity:.3;
+  background-image:radial-gradient(ellipse at 20% 10%,rgba(227,5,19,.35),transparent 45%),radial-gradient(ellipse at 80% 90%,rgba(208,46,31,.25),transparent 40%)}
 #reclamix-landing .rx-hero-inner{position:relative;max-width:980px;margin:0 auto;padding:48px 16px;min-height:min(62vh,560px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 @media(min-width:1024px){#reclamix-landing .rx-hero-inner{min-height:min(58vh,520px);padding:64px 24px}}
 #reclamix-landing .rx-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3);backdrop-filter:blur(6px);border-radius:999px;padding:4px 12px;font-size:14px;margin-bottom:12px}
@@ -147,8 +158,8 @@
 #reclamix-landing .rx-about-media{position:relative;min-height:260px}
 @media(min-width:640px){#reclamix-landing .rx-about-media{min-height:360px}}
 #reclamix-landing .rx-about-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-#reclamix-landing .rx-about-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.35),transparent)}
-@media(min-width:1024px){#reclamix-landing .rx-about-media::after{background:linear-gradient(to right,transparent,rgba(0,0,0,.2))}}
+#reclamix-landing .rx-about-media::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(to top,rgba(10,10,10,.45),transparent 55%),linear-gradient(120deg,rgba(227,5,19,.38),transparent 42%,rgba(208,46,31,.22) 100%)}
 #reclamix-landing .rx-about-body{padding:32px 20px;display:flex;flex-direction:column;justify-content:center}
 @media(min-width:640px){#reclamix-landing .rx-about-body{padding:40px 32px}}
 @media(min-width:1024px){#reclamix-landing .rx-about-body{padding:40px}}
@@ -233,11 +244,12 @@
 #reclamix-landing .rx-port-head p{margin:8px 0 0;font-size:14px;color:var(--rx-muted)}
 #reclamix-landing .rx-port-grid{margin-top:32px;display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:640px){#reclamix-landing .rx-port-grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){#reclamix-landing .rx-port-grid{grid-template-columns:1fr 1fr 1fr;gap:16px}}
-#reclamix-landing .rx-port-item{position:relative;overflow:hidden;border-radius:6px;background:#000;min-height:200px}
+@media(min-width:1024px){#reclamix-landing .rx-port-grid{grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,minmax(200px,1fr));gap:16px}}
+#reclamix-landing .rx-port-item{position:relative;overflow:hidden;border-radius:6px;background:#000;min-height:200px;height:100%}
 #reclamix-landing .rx-port-tall{min-height:280px}
-@media(min-width:1024px){#reclamix-landing .rx-port-tall{grid-row:span 2;min-height:0}}
-#reclamix-landing .rx-port-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;min-height:200px}
+@media(min-width:640px){#reclamix-landing .rx-port-tall{grid-row:span 2}}
+@media(min-width:1024px){#reclamix-landing .rx-port-tall{min-height:0}}
+#reclamix-landing .rx-port-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;min-height:200px;display:block}
 #reclamix-landing .rx-port-item:hover img{transform:scale(1.04)}
 #reclamix-landing .rx-port-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px;font-size:14px;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
 #reclamix-landing .rx-more{margin-top:32px;display:flex;justify-content:center}
@@ -271,7 +283,8 @@
 #reclamix-landing .rx-fab:hover{background:var(--rx-red);transform:scale(1.05)}
 
 @media (prefers-reduced-motion:reduce){
-  #reclamix-landing .rx-marquee,#reclamix-landing .rx-about-frame,#reclamix-landing .rx-calc-blobs,#reclamix-landing .rx-call{animation:none!important}
+  #reclamix-landing .rx-marquee,#reclamix-landing .rx-tagline,#reclamix-landing .rx-about-frame,#reclamix-landing .rx-calc-blobs,#reclamix-landing .rx-call{animation:none!important}
+  #reclamix-landing .rx-tagline{background-position:40% 50%}
 }
 </style>
 
@@ -332,6 +345,7 @@
 <section class="rx-hero" id="rx-hero">
   <img class="rx-hero-bg" src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/hero/workshop.jpg" alt="Производство Рекламикс">
   <div class="rx-hero-shade"></div>
+  <div class="rx-hero-glow" aria-hidden="true"></div>
   <div class="rx-hero-inner">
     <div class="rx-badge"><span style="color:#fcd34d">★ 5.0</span><span style="opacity:.8">производство в Иваново</span></div>
     <h1 class="rx-display">Производство наружной рекламы<span>Иваново</span></h1>
