@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рекламикс — превью для Тильды</title>
+<style>body{margin:0}</style>
+</head>
+<body>
+<!-- RECLAMIX TILDA HTML EMBED — вставьте ВЕСЬ этот код в блок «HTML-код» -->
+<!-- Картинки и шрифты: https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main -->
+<div id="reclamix-landing" class="rx-root">
+<style>
+@font-face{font-family:"GOST Type BU";src:url("https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/fonts/gost-bu.ttf") format("truetype");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Plakat Titul";src:url("https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/fonts/plakat-titul.ttf") format("truetype");font-weight:400;font-display:swap}
+#reclamix-landing,#reclamix-landing *{box-sizing:border-box}
+#reclamix-landing{
+  --rx-red:#e30513;--rx-coral:#d02e1f;--rx-black:#0a0a0a;--rx-ink:#1a1a1a;
+  --rx-muted:#6b6b6b;--rx-wa:#25d366;--rx-vk:#0077ff;--rx-tg:#229ed9;--rx-calc:#f07a1a;
+  font-family:"GOST Type BU","Segoe UI",system-ui,sans-serif;color:var(--rx-ink);background:#fff;
+  line-height:1.45;-webkit-font-smoothing:antialiased;position:relative;overflow:clip;width:100%;
+}
+#reclamix-landing img{max-width:100%;display:block}
+#reclamix-landing a{color:inherit;text-decoration:none}
+#reclamix-landing button,#reclamix-landing input,#reclamix-landing select{font:inherit}
+#reclamix-landing .rx-display{font-family:"Plakat Titul","GOST Type BU",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+#reclamix-landing .rx-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 16px}
+@media(min-width:1024px){#reclamix-landing .rx-wrap{padding:0 24px}}
+#reclamix-landing .rx-wrap-wide{max-width:1280px}
+
+/* Header */
+#reclamix-landing .rx-usp{background:var(--rx-coral);color:#fff;font-size:13px}
+@media(min-width:640px){#reclamix-landing .rx-usp{font-size:14px}}
+#reclamix-landing .rx-usp-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+#reclamix-landing .rx-usp-list{display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap;min-width:0;flex:1}
+#reclamix-landing .rx-usp-list li{display:flex;align-items:center;gap:10px;font-weight:500}
+#reclamix-landing .rx-usp-list .rx-sep{width:1px;height:12px;background:rgba(255,255,255,.35)}
+#reclamix-landing .rx-usp-third{display:none}
+@media(min-width:420px){#reclamix-landing .rx-usp-third{display:flex}}
+#reclamix-landing .rx-usp-short{display:inline}
+#reclamix-landing .rx-usp-full{display:none}
+@media(min-width:640px){
+  #reclamix-landing .rx-usp-short{display:none}
+  #reclamix-landing .rx-usp-full{display:inline}
+}
+#reclamix-landing .rx-usp-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+#reclamix-landing .rx-usp-hours{display:none}
+@media(min-width:768px){#reclamix-landing .rx-usp-hours{display:inline;opacity:.9}}
+#reclamix-landing .rx-usp-right a{font-weight:600}
+
+#reclamix-landing .rx-logo-row{border-bottom:1px solid rgba(0,0,0,.05);background:#fff}
+#reclamix-landing .rx-logo-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+#reclamix-landing .rx-logo img{height:44px;width:auto;object-fit:contain}
+@media(min-width:640px){#reclamix-landing .rx-logo img{height:52px}}
+@media(min-width:1024px){#reclamix-landing .rx-logo img{height:56px}}
+#reclamix-landing .rx-tagline{
+  display:none;text-align:center;font-weight:700;text-transform:uppercase;font-size:clamp(1.05rem,1.35vw,1.35rem);line-height:1.2;
+  background-image:linear-gradient(92deg,#111 0%,#111 9%,#e30513 17%,#ff4a3a 21%,#111 26%,#111 34%,#d02e1f 42%,#111 50%,#111 50%,#111 59%,#e30513 67%,#ff4a3a 71%,#111 76%,#111 84%,#d02e1f 92%,#111 100%);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-fill-color:transparent;animation:rx-tagline 4.5s linear infinite;
+}
+@media(min-width:1024px){#reclamix-landing .rx-tagline{display:block}}
+@keyframes rx-tagline{from{background-position:0% 50%}to{background-position:100% 50%}}
+#reclamix-landing .rx-header-ctas{display:none;gap:12px;align-items:center}
+@media(min-width:768px){#reclamix-landing .rx-header-ctas{display:flex}}
+#reclamix-landing .rx-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border:0;cursor:pointer;transition:.2s}
+#reclamix-landing .rx-btn-coral{background:var(--rx-coral);color:#fff}
+#reclamix-landing .rx-btn-coral:hover{background:var(--rx-red)}
+#reclamix-landing .rx-btn-outline{background:#fff;border:1px solid rgba(26,26,26,.15);color:var(--rx-ink);font-weight:600;text-transform:none}
+#reclamix-landing .rx-burger{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.1);border-radius:8px;background:#fff}
+@media(min-width:768px){#reclamix-landing .rx-burger{display:none}}
+#reclamix-landing .rx-burger span{display:block;width:20px;height:2px;background:var(--rx-ink);margin:3px 0;transition:.2s}
+#reclamix-landing .rx-burger.is-open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+#reclamix-landing .rx-burger.is-open span:nth-child(2){opacity:0}
+#reclamix-landing .rx-burger.is-open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+#reclamix-landing .rx-nav{display:none;border-bottom:1px solid rgba(0,0,0,.05);background:#f7f7f7}
+@media(min-width:768px){#reclamix-landing .rx-nav{display:block}}
+#reclamix-landing .rx-nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+#reclamix-landing .rx-nav ul{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;margin:0;padding:0;font-size:15px}
+#reclamix-landing .rx-nav a:hover{color:var(--rx-coral)}
+#reclamix-landing .rx-nav-city{font-size:14px;color:var(--rx-muted)}
+
+#reclamix-landing .rx-mobile{display:none;position:fixed;inset:0;z-index:100;background:#fff;padding:20px;flex-direction:column}
+#reclamix-landing .rx-mobile.is-open{display:flex}
+#reclamix-landing .rx-mobile ul{list-style:none;margin:24px 0;padding:0;display:flex;flex-direction:column;gap:16px;font-size:18px;font-weight:600}
+#reclamix-landing.rx-lock{overflow:hidden}
+
+/* Hero */
+#reclamix-landing .rx-hero{position:relative;isolation:isolate;overflow:hidden;background:var(--rx-black);color:#fff}
+#reclamix-landing .rx-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 28%;opacity:.75}
+#reclamix-landing .rx-hero-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.65),rgba(0,0,0,.5),rgba(0,0,0,.78))}
+#reclamix-landing .rx-hero-inner{position:relative;max-width:980px;margin:0 auto;padding:48px 16px;min-height:min(62vh,560px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+@media(min-width:1024px){#reclamix-landing .rx-hero-inner{min-height:min(58vh,520px);padding:64px 24px}}
+#reclamix-landing .rx-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3);backdrop-filter:blur(6px);border-radius:999px;padding:4px 12px;font-size:14px;margin-bottom:12px}
+#reclamix-landing .rx-hero h1{font-size:clamp(1.45rem,4vw,2.75rem);line-height:1.12;margin:0}
+#reclamix-landing .rx-hero h1 span{display:block;margin-top:4px;color:var(--rx-coral)}
+#reclamix-landing .rx-hero-lead{max-width:640px;margin:16px 0 0;font-size:14px;color:rgba(255,255,255,.85)}
+@media(min-width:640px){#reclamix-landing .rx-hero-lead{font-size:15px}}
+#reclamix-landing .rx-hero-price{margin:10px 0 0;font-weight:600;text-decoration:underline;text-decoration-color:var(--rx-coral);text-underline-offset:4px;text-decoration-thickness:2px}
+#reclamix-landing .rx-hero-feats{display:none;grid-template-columns:1fr 1fr;gap:8px 16px;width:100%;max-width:560px;margin-top:20px;text-align:left;font-size:13px}
+@media(min-width:640px){#reclamix-landing .rx-hero-feats{display:grid;font-size:14px}}
+#reclamix-landing .rx-hero-feats li{display:flex;gap:8px;align-items:flex-start;list-style:none}
+#reclamix-landing .rx-hero-feats ul{margin:0;padding:0}
+#reclamix-landing .rx-dot{width:6px;height:6px;border-radius:50%;background:var(--rx-coral);margin-top:7px;flex-shrink:0}
+#reclamix-landing .rx-hero-ctas{display:flex;flex-direction:column;gap:10px;width:100%;max-width:720px;margin-top:28px}
+@media(min-width:640px){#reclamix-landing .rx-hero-ctas{flex-direction:row;justify-content:center}}
+#reclamix-landing .rx-btn-wa{background:var(--rx-wa);color:#fff}
+#reclamix-landing .rx-btn-vk{background:var(--rx-vk);color:#fff}
+
+/* Marquee */
+#reclamix-landing .rx-clients{border-top:1px solid rgba(0,0,0,.05);border-bottom:1px solid rgba(0,0,0,.05);background:#fff;padding:20px 0 24px;overflow:hidden}
+#reclamix-landing .rx-clients-title{text-align:center;color:var(--rx-muted);font-size:16px;margin:0 0 16px}
+@media(min-width:640px){#reclamix-landing .rx-clients-title{font-size:18px}}
+#reclamix-landing .rx-marquee-wrap{position:relative}
+#reclamix-landing .rx-marquee-fade-l,#reclamix-landing .rx-marquee-fade-r{position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
+#reclamix-landing .rx-marquee-fade-l{left:0;background:linear-gradient(to right,#fff,transparent)}
+#reclamix-landing .rx-marquee-fade-r{right:0;background:linear-gradient(to left,#fff,transparent)}
+@media(min-width:640px){#reclamix-landing .rx-marquee-fade-l,#reclamix-landing .rx-marquee-fade-r{width:96px}}
+#reclamix-landing .rx-marquee{display:flex;width:max-content;animation:rx-marquee 45s linear infinite;will-change:transform}
+#reclamix-landing .rx-marquee-group{display:flex;align-items:center;gap:40px;padding:0 20px}
+@media(min-width:640px){#reclamix-landing .rx-marquee-group{gap:56px;padding:0 28px}}
+#reclamix-landing .rx-logo-slot{width:200px;height:72px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+@media(min-width:640px){#reclamix-landing .rx-logo-slot{width:220px;height:84px}}
+#reclamix-landing .rx-logo-slot img{width:100%;height:100%;object-fit:contain}
+@keyframes rx-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+
+/* Services */
+#reclamix-landing .rx-services{background:#fbfbfb;padding:56px 0}
+#reclamix-landing .rx-sec-head{max-width:720px;margin:0 auto;text-align:center}
+#reclamix-landing .rx-sec-head h2{color:var(--rx-coral);font-size:clamp(1.4rem,3.5vw,2.2rem);margin:0}
+#reclamix-landing .rx-sec-head p{margin:12px 0 0;color:var(--rx-muted);font-size:16px}
+@media(min-width:640px){#reclamix-landing .rx-sec-head p{font-size:18px}}
+#reclamix-landing .rx-services-grid{display:grid;grid-template-columns:1fr;gap:40px;margin-top:40px}
+@media(min-width:640px){#reclamix-landing .rx-services-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){#reclamix-landing .rx-services-grid{grid-template-columns:1fr 1fr 1fr;gap:48px}}
+#reclamix-landing .rx-service{position:relative;max-width:340px;margin:0 auto;width:100%;padding-bottom:24px}
+#reclamix-landing .rx-service-circle{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+#reclamix-landing .rx-service-circle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+#reclamix-landing .rx-service:hover .rx-service-circle img{transform:scale(1.04)}
+#reclamix-landing .rx-service-plaque{position:absolute;left:-2%;right:-2%;bottom:2%;z-index:2;border-radius:6px;background:linear-gradient(90deg,#2c2c2c,#4a4a4a);color:#fff;padding:12px 14px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+#reclamix-landing .rx-service-plaque h3{margin:0;font-size:13px;font-weight:700;text-transform:uppercase}
+@media(min-width:640px){#reclamix-landing .rx-service-plaque h3{font-size:14px}}
+#reclamix-landing .rx-service-plaque p{margin:4px 0 0;font-size:12px;color:rgba(255,255,255,.85)}
+#reclamix-landing .rx-service-plaque a{flex-shrink:0;background:var(--rx-coral);color:#fff;border-radius:4px;padding:8px 10px;font-size:10px;font-weight:700;text-transform:uppercase}
+@media(min-width:640px){#reclamix-landing .rx-service-plaque a{font-size:11px;padding:8px 12px}}
+
+/* About */
+#reclamix-landing .rx-about{background:#fff;padding:48px 0}
+#reclamix-landing .rx-about-frame{
+  padding:5px;background:linear-gradient(125deg,#0a0a0a 0%,#e30513 14%,#1a1a1a 24%,#d02e1f 36%,#0a0a0a 50%,#e30513 64%,#1a1a1a 74%,#d02e1f 86%,#0a0a0a 100%);
+  background-size:200% 200%;animation:rx-about-frame 8s linear infinite;
+}
+@media(min-width:1024px){#reclamix-landing .rx-about-frame{padding:6px}}
+@keyframes rx-about-frame{from{background-position:0% 40%}to{background-position:100% 40%}}
+#reclamix-landing .rx-about-card{background:#fff;overflow:hidden;display:grid}
+@media(min-width:1024px){#reclamix-landing .rx-about-card{grid-template-columns:1fr 1fr}}
+#reclamix-landing .rx-about-media{position:relative;min-height:260px}
+@media(min-width:640px){#reclamix-landing .rx-about-media{min-height:360px}}
+#reclamix-landing .rx-about-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#reclamix-landing .rx-about-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.35),transparent)}
+@media(min-width:1024px){#reclamix-landing .rx-about-media::after{background:linear-gradient(to right,transparent,rgba(0,0,0,.2))}}
+#reclamix-landing .rx-about-body{padding:32px 20px;display:flex;flex-direction:column;justify-content:center}
+@media(min-width:640px){#reclamix-landing .rx-about-body{padding:40px 32px}}
+@media(min-width:1024px){#reclamix-landing .rx-about-body{padding:40px}}
+#reclamix-landing .rx-about-body h2{color:var(--rx-coral);font-size:clamp(1.15rem,2.6vw,1.75rem);margin:0;line-height:1.25}
+#reclamix-landing .rx-about-body .rx-p{margin:16px 0 0;font-size:14px;color:rgba(26,26,26,.9)}
+#reclamix-landing .rx-about-body .rx-ul-title{margin:20px 0 0;font-size:14px;font-weight:600;text-decoration:underline;text-decoration-color:rgba(208,46,31,.6);text-underline-offset:4px}
+#reclamix-landing .rx-about-body ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:14px}
+#reclamix-landing .rx-about-body li{display:flex;gap:8px}
+#reclamix-landing .rx-about-body li span{width:6px;height:6px;border-radius:50%;background:var(--rx-coral);margin-top:8px;flex-shrink:0}
+#reclamix-landing .rx-about-actions{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+@media(min-width:640px){#reclamix-landing .rx-about-actions{flex-direction:row;align-items:center;justify-content:space-between}}
+#reclamix-landing .rx-socials{display:flex;gap:8px}
+#reclamix-landing .rx-social{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff}
+
+/* Calculator */
+#reclamix-landing .rx-calc{position:relative;overflow:hidden;padding:56px 0;background:#050505;
+  background-image:radial-gradient(ellipse 90% 55% at 15% 20%,rgba(227,5,19,.55),transparent 58%),radial-gradient(ellipse 70% 50% at 85% 15%,rgba(160,10,20,.4),transparent 55%),radial-gradient(ellipse 80% 60% at 70% 85%,rgba(227,5,19,.35),transparent 60%),radial-gradient(ellipse 55% 40% at 25% 75%,rgba(120,0,15,.45),transparent 55%),linear-gradient(180deg,#0a0506,#050505 45%,#0c0608)}
+#reclamix-landing .rx-calc-blobs{position:absolute;inset:0;pointer-events:none;filter:blur(28px);opacity:.95;mix-blend-mode:screen;
+  background:radial-gradient(circle at 30% 40%,rgba(255,40,50,.22),transparent 28%),radial-gradient(circle at 75% 60%,rgba(200,0,30,.2),transparent 32%),radial-gradient(circle at 50% 20%,rgba(255,60,70,.12),transparent 35%);
+  background-size:160% 160%;animation:rx-slime 18s linear infinite}
+@keyframes rx-slime{
+  0%{background-position:0% 20%,100% 40%,40% 0%;transform:translate3d(0,0,0) scale(1)}
+  33%{background-position:40% 55%,60% 25%,65% 45%;transform:translate3d(1.5%,-1%,0) scale(1.06)}
+  66%{background-position:75% 35%,30% 65%,25% 70%;transform:translate3d(-1%,1.5%,0) scale(1.03)}
+  100%{background-position:0% 20%,100% 40%,40% 0%;transform:translate3d(0,0,0) scale(1)}
+}
+#reclamix-landing .rx-calc-inner{position:relative;max-width:1100px;margin:0 auto;padding:0 16px}
+#reclamix-landing .rx-calc h2{color:#fff;text-align:center;font-size:clamp(1.15rem,2.8vw,1.7rem);font-weight:600;margin:0}
+#reclamix-landing .rx-calc-card{margin-top:32px;background:#fff;border-radius:16px;padding:20px;box-shadow:0 25px 50px rgba(0,0,0,.35);display:grid;gap:24px}
+@media(min-width:640px){#reclamix-landing .rx-calc-card{padding:28px}}
+@media(min-width:1024px){#reclamix-landing .rx-calc-card{grid-template-columns:1.15fr .85fr;gap:32px}}
+#reclamix-landing .rx-calc h3{margin:0;font-size:18px}
+#reclamix-landing .rx-tabs{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;border-radius:8px;overflow:hidden}
+#reclamix-landing .rx-tabs button{border:0;padding:12px;color:#fff;font-weight:600;cursor:pointer;background:#8a8a8a}
+#reclamix-landing .rx-tabs button.is-active{background:var(--rx-calc)}
+#reclamix-landing .rx-fields{margin-top:20px;display:grid;gap:16px}
+@media(min-width:640px){#reclamix-landing .rx-fields{grid-template-columns:1fr 1fr}}
+#reclamix-landing label.rx-field{display:block;font-size:14px}
+#reclamix-landing label.rx-field span{display:block;margin-bottom:6px;font-weight:600}
+#reclamix-landing select,#reclamix-landing input[type=range]{width:100%}
+#reclamix-landing select{border:1px solid rgba(0,0,0,.15);border-radius:6px;padding:10px 12px;background:#fff}
+#reclamix-landing .rx-extras{margin-top:20px}
+#reclamix-landing .rx-extras legend,#reclamix-landing .rx-gift legend{font-size:14px;font-weight:600;margin-bottom:8px}
+#reclamix-landing .rx-extras-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:14px}
+@media(min-width:640px){#reclamix-landing .rx-extras-grid{grid-template-columns:1fr 1fr 1fr}}
+#reclamix-landing .rx-extras-grid label{display:flex;align-items:center;gap:8px}
+#reclamix-landing .rx-range{margin-top:20px}
+#reclamix-landing .rx-range-top{display:flex;justify-content:space-between;align-items:center;font-size:14px;margin-bottom:8px}
+#reclamix-landing .rx-range-val{border:1px solid rgba(0,0,0,.1);border-radius:4px;padding:4px 8px;font-weight:600}
+#reclamix-landing .rx-gift{margin-top:20px}
+#reclamix-landing .rx-gift-radios{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}
+#reclamix-landing .rx-gift-radios label{display:flex;align-items:center;gap:8px;cursor:pointer}
+#reclamix-landing .rx-estimate{margin-top:24px;border:1px solid #cfe8f7;background:#f3faff;border-radius:12px;padding:16px}
+#reclamix-landing .rx-estimate .rx-muted{color:var(--rx-muted);font-size:14px;margin:0}
+#reclamix-landing .rx-estimate .rx-price{margin:4px 0 0;font-size:30px;font-weight:700}
+#reclamix-landing .rx-estimate .rx-note{margin:8px 0 0;font-size:12px;color:var(--rx-muted)}
+#reclamix-landing .rx-call{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:12px;border:3px solid #229ed9;border-radius:999px;padding:14px 20px;font-weight:700;background:#fff;animation:rx-pulse 2s ease-out infinite}
+@keyframes rx-pulse{0%{box-shadow:0 0 0 0 rgba(34,158,217,.55)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
+#reclamix-landing .rx-cta-orange{margin-top:16px;display:flex;width:100%;align-items:center;justify-content:center;border-radius:8px;background:var(--rx-calc);color:#fff;padding:16px;font-size:14px;font-weight:700;text-transform:uppercase;box-shadow:0 10px 24px rgba(240,122,26,.25)}
+#reclamix-landing .rx-gifts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#reclamix-landing .rx-gift-card{overflow:hidden;border-radius:12px;border:2px solid rgba(0,0,0,.1);background:var(--rx-black);color:#fff;text-align:left;cursor:pointer;padding:0;transition:.3s;width:100%}
+#reclamix-landing .rx-gift-card .rx-gift-head{background:linear-gradient(to bottom,var(--rx-coral),var(--rx-black));padding:12px 14px}
+#reclamix-landing .rx-gift-card .rx-gift-head small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.7}
+#reclamix-landing .rx-gift-card .rx-gift-head strong{display:block;margin-top:4px;font-size:14px}
+#reclamix-landing .rx-gift-card .rx-gift-img{height:112px;background-size:cover;background-position:center}
+@media(min-width:640px){#reclamix-landing .rx-gift-card .rx-gift-img{height:144px}}
+#reclamix-landing .rx-gift-card.is-selected{border-color:var(--rx-coral);box-shadow:0 0 0 2px var(--rx-coral),0 10px 28px rgba(208,46,31,.25);transform:scale(1.02);z-index:1}
+#reclamix-landing .rx-gift-card.is-dim{opacity:.45;filter:grayscale(30%);transform:scale(.98)}
+#reclamix-landing .rx-gift-note{margin:12px 0 0;font-size:11px;color:var(--rx-muted)}
+#reclamix-landing .rx-prod-link{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#f0f0f0;border-radius:12px;padding:12px 16px;font-size:14px;font-weight:600}
+#reclamix-landing .rx-play{width:40px;height:40px;border-radius:50%;background:var(--rx-coral);color:#fff;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+#reclamix-landing .rx-yandex{margin-top:16px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.1);border-radius:8px;padding:8px 12px;font-size:14px}
+
+/* Portfolio */
+#reclamix-landing .rx-portfolio{background:#f6f6f6;padding:56px 0}
+#reclamix-landing .rx-port-ctas{display:flex;flex-direction:column;gap:12px}
+@media(min-width:640px){#reclamix-landing .rx-port-ctas{flex-direction:row}}
+#reclamix-landing .rx-port-ctas a{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;border-radius:6px;color:#fff;font-size:14px;font-weight:700;text-transform:uppercase}
+#reclamix-landing .rx-port-ctas .rx-black{background:var(--rx-black)}
+#reclamix-landing .rx-port-head{margin-top:32px;text-align:center}
+#reclamix-landing .rx-port-head h2{margin:0;font-size:clamp(1.35rem,3vw,2rem)}
+#reclamix-landing .rx-port-head p{margin:8px 0 0;font-size:14px;color:var(--rx-muted)}
+#reclamix-landing .rx-port-grid{margin-top:32px;display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:640px){#reclamix-landing .rx-port-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){#reclamix-landing .rx-port-grid{grid-template-columns:1fr 1fr 1fr;gap:16px}}
+#reclamix-landing .rx-port-item{position:relative;overflow:hidden;border-radius:6px;background:#000;min-height:200px}
+#reclamix-landing .rx-port-tall{min-height:280px}
+@media(min-width:1024px){#reclamix-landing .rx-port-tall{grid-row:span 2;min-height:0}}
+#reclamix-landing .rx-port-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;min-height:200px}
+#reclamix-landing .rx-port-item:hover img{transform:scale(1.04)}
+#reclamix-landing .rx-port-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px;font-size:14px;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
+#reclamix-landing .rx-more{margin-top:32px;display:flex;justify-content:center}
+#reclamix-landing .rx-more a{border:2px solid var(--rx-coral);background:#fff;color:var(--rx-coral);border-radius:6px;padding:14px 32px;font-size:14px;font-weight:700;text-transform:uppercase}
+#reclamix-landing .rx-more a:hover{background:var(--rx-coral);color:#fff}
+
+/* Footer */
+#reclamix-landing .rx-footer{position:relative;overflow:hidden;background:var(--rx-black);color:#fff;padding:48px 0}
+#reclamix-landing .rx-footer-orb{position:absolute;left:-80px;bottom:0;width:256px;height:256px;border-radius:50%;background:rgba(227,5,19,.28);filter:blur(48px);pointer-events:none}
+#reclamix-landing .rx-footer-grid{position:relative;display:grid;gap:40px}
+@media(min-width:640px){#reclamix-landing .rx-footer-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){#reclamix-landing .rx-footer-grid{grid-template-columns:1fr 1fr 1fr}}
+#reclamix-landing .rx-footer img{height:56px;width:auto}
+@media(min-width:640px){#reclamix-landing .rx-footer img{height:64px}}
+#reclamix-landing .rx-footer p{margin:16px 0 0;font-size:14px;color:rgba(255,255,255,.8);max-width:360px}
+#reclamix-landing .rx-footer .rx-copy{margin-top:24px;font-size:12px;color:rgba(255,255,255,.45)}
+#reclamix-landing .rx-footer h3{margin:0;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.14em}
+#reclamix-landing .rx-footer ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;font-size:14px;color:rgba(255,255,255,.85)}
+#reclamix-landing .rx-footer li,#reclamix-landing .rx-footer a{display:inline-flex;align-items:center;gap:8px}
+#reclamix-landing .rx-footer a:hover{color:var(--rx-coral)}
+#reclamix-landing .rx-fdot{width:8px;height:8px;border-radius:50%;background:var(--rx-coral);flex-shrink:0}
+#reclamix-landing .rx-footer .rx-coral-note{margin-top:12px;font-weight:600;color:var(--rx-coral);font-size:14px}
+#reclamix-landing .rx-footer-nav{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:rgba(255,255,255,.75)}
+
+/* Floating */
+#reclamix-landing .rx-sidebar{display:none;position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:30;flex-direction:column;border-radius:8px 0 0 8px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+@media(min-width:768px){#reclamix-landing .rx-sidebar{display:flex}}
+#reclamix-landing .rx-sidebar a{width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff}
+#reclamix-landing .rx-fab{position:fixed;right:20px;bottom:20px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--rx-coral);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(208,46,31,.35)}
+@media(min-width:768px){#reclamix-landing .rx-fab{right:24px;bottom:24px}}
+#reclamix-landing .rx-fab:hover{background:var(--rx-red);transform:scale(1.05)}
+
+@media (prefers-reduced-motion:reduce){
+  #reclamix-landing .rx-marquee,#reclamix-landing .rx-tagline,#reclamix-landing .rx-about-frame,#reclamix-landing .rx-calc-blobs,#reclamix-landing .rx-call{animation:none!important}
+}
+</style>
+
+<!-- ===== HEADER ===== -->
+<header class="rx-header">
+  <div class="rx-usp">
+    <div class="rx-wrap rx-wrap-wide rx-usp-inner">
+      <ul class="rx-usp-list">
+        <li><span class="rx-usp-short">От 3 дней</span><span class="rx-usp-full">Сроки от 3 дней</span></li>
+        <li><span class="rx-sep"></span><span class="rx-usp-short">Гарантия 12 мес.</span><span class="rx-usp-full">Гарантия 12 месяцев</span></li>
+        <li class="rx-usp-third"><span class="rx-sep"></span><span class="rx-usp-short">Выезд 0 ₽</span><span class="rx-usp-full">Выезд бесплатно</span></li>
+      </ul>
+      <div class="rx-usp-right">
+        <span class="rx-usp-hours">пн–пт: с 9:00 до 18:00</span>
+        <a href="tel:+79010344766">+7 901-034-4766</a>
+      </div>
+    </div>
+  </div>
+  <div class="rx-logo-row">
+    <div class="rx-wrap rx-wrap-wide rx-logo-inner">
+      <a class="rx-logo" href="#rx-hero" aria-label="Рекламикс"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/logos/logo-color-light.png" alt="Рекламикс"></a>
+      <p class="rx-tagline">Рекламное агентство<br>и производство в Иваново</p>
+      <div class="rx-header-ctas">
+        <a class="rx-btn rx-btn-coral" href="#rx-calc">Расчёт за 10 минут</a>
+        <a class="rx-btn rx-btn-outline" href="tel:+79010344766">Позвонить</a>
+      </div>
+      <button type="button" class="rx-burger" id="rx-burger" aria-label="Меню" aria-expanded="false">
+        <div><span></span><span></span><span></span></div>
+      </button>
+    </div>
+  </div>
+  <nav class="rx-nav">
+    <div class="rx-wrap rx-wrap-wide rx-nav-inner">
+      <ul><li><a class="" href="#rx-hero">Главная</a></li>
+<li><a class="" href="#rx-services">Услуги и цены</a></li>
+<li><a class="" href="#rx-about">О нас</a></li>
+<li><a class="" href="#rx-calc">Расчёт цены</a></li>
+<li><a class="" href="#rx-portfolio">Портфолио</a></li>
+<li><a class="" href="#rx-contacts">Контакты</a></li></ul>
+      <span class="rx-nav-city">Иваново и Ивановская область</span>
+    </div>
+  </nav>
+  <div class="rx-mobile" id="rx-mobile">
+    <button type="button" class="rx-burger is-open" id="rx-mobile-close" aria-label="Закрыть">
+      <div><span></span><span></span><span></span></div>
+    </button>
+    <ul><li><a class="rx-mobile-link" href="#rx-hero">Главная</a></li>
+<li><a class="rx-mobile-link" href="#rx-services">Услуги и цены</a></li>
+<li><a class="rx-mobile-link" href="#rx-about">О нас</a></li>
+<li><a class="rx-mobile-link" href="#rx-calc">Расчёт цены</a></li>
+<li><a class="rx-mobile-link" href="#rx-portfolio">Портфолио</a></li>
+<li><a class="rx-mobile-link" href="#rx-contacts">Контакты</a></li></ul>
+    <a class="rx-btn rx-btn-coral" href="#rx-calc" id="rx-mobile-calc">Расчёт за 10 минут</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="rx-hero" id="rx-hero">
+  <img class="rx-hero-bg" src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/hero/workshop.jpg" alt="Производство Рекламикс">
+  <div class="rx-hero-shade"></div>
+  <div class="rx-hero-inner">
+    <div class="rx-badge"><span style="color:#fcd34d">★ 5.0</span><span style="opacity:.8">производство в Иваново</span></div>
+    <h1 class="rx-display">Производство наружной рекламы<span>Иваново</span></h1>
+    <p class="rx-hero-lead">«Рекламикс» — рекламное агентство и производство рекламы в Иваново и Ивановской области. Изготовим и смонтируем вывески, объёмные буквы, стелы и другие конструкции любой сложности.</p>
+    <p class="rx-hero-price">У нас — цены производителя!</p>
+    <div class="rx-hero-feats">
+      <ul>
+        <li><span class="rx-dot"></span>Собственное производство</li>
+        <li><span class="rx-dot"></span>Работаем по договору</li>
+        <li><span class="rx-dot"></span>Любые формы оплаты</li>
+      </ul>
+      <ul>
+        <li><span class="rx-dot"></span>Макет в подарок*</li>
+        <li><span class="rx-dot"></span>Монтажные работы</li>
+        <li><span class="rx-dot"></span>Гарантия до 12 месяцев</li>
+      </ul>
+    </div>
+    <div class="rx-hero-ctas">
+      <a class="rx-btn rx-btn-coral" href="#rx-calc">Расчёт за 10 минут</a>
+      <a class="rx-btn rx-btn-wa" href="https://wa.me/79010344766" target="_blank" rel="noreferrer">Написать в WhatsApp</a>
+      <a class="rx-btn rx-btn-vk" href="tel:+79010344766">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS ===== -->
+<section class="rx-clients" id="rx-clients" aria-label="Компании">
+  <p class="rx-clients-title">Нам доверяют</p>
+  <div class="rx-marquee-wrap">
+    <div class="rx-marquee-fade-l"></div>
+    <div class="rx-marquee-fade-r"></div>
+    <div class="rx-marquee">
+      <div class="rx-marquee-group"><div class="rx-logo-slot" title="Магнит"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/magnit.png" alt="Магнит" loading="lazy"></div>
+<div class="rx-logo-slot" title="Пятёрочка"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/pyaterochka.png" alt="Пятёрочка" loading="lazy"></div>
+<div class="rx-logo-slot" title="Автошкола Фурор"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/furor.png" alt="Автошкола Фурор" loading="lazy"></div>
+<div class="rx-logo-slot" title="Билайн"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/beeline.png" alt="Билайн" loading="lazy"></div>
+<div class="rx-logo-slot" title="ФНС России"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/fns.png" alt="ФНС России" loading="lazy"></div>
+<div class="rx-logo-slot" title="Ozon"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/ozon.png" alt="Ozon" loading="lazy"></div>
+<div class="rx-logo-slot" title="Сбер"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/sber.png" alt="Сбер" loading="lazy"></div>
+<div class="rx-logo-slot" title="МТС"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/mts.png" alt="МТС" loading="lazy"></div>
+<div class="rx-logo-slot" title="Wildberries"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/wildberries.png" alt="Wildberries" loading="lazy"></div>
+<div class="rx-logo-slot" title="DNS"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/dns.png" alt="DNS" loading="lazy"></div></div>
+      <div class="rx-marquee-group" aria-hidden="true"><div class="rx-logo-slot" title="Магнит"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/magnit.png" alt="Магнит" loading="lazy"></div>
+<div class="rx-logo-slot" title="Пятёрочка"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/pyaterochka.png" alt="Пятёрочка" loading="lazy"></div>
+<div class="rx-logo-slot" title="Автошкола Фурор"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/furor.png" alt="Автошкола Фурор" loading="lazy"></div>
+<div class="rx-logo-slot" title="Билайн"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/beeline.png" alt="Билайн" loading="lazy"></div>
+<div class="rx-logo-slot" title="ФНС России"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/fns.png" alt="ФНС России" loading="lazy"></div>
+<div class="rx-logo-slot" title="Ozon"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/ozon.png" alt="Ozon" loading="lazy"></div>
+<div class="rx-logo-slot" title="Сбер"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/sber.png" alt="Сбер" loading="lazy"></div>
+<div class="rx-logo-slot" title="МТС"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/mts.png" alt="МТС" loading="lazy"></div>
+<div class="rx-logo-slot" title="Wildberries"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/wildberries.png" alt="Wildberries" loading="lazy"></div>
+<div class="rx-logo-slot" title="DNS"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/clients/dns.png" alt="DNS" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="rx-services" id="rx-services">
+  <div class="rx-wrap">
+    <div class="rx-sec-head">
+      <h2 class="rx-display">Что мы можем изготовить</h2>
+      <p>Выберите нужный тип рекламы — и оставьте заявку на расчёт. Подробный каталог услуг добавим позже; пока цены — ориентир «от».</p>
+    </div>
+    <div class="rx-services-grid">
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#f7c4d4,#c9b6e8)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/banner.jpg" alt="Печать баннера" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>Печать баннера</h3>
+              <p>от … ₽</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article>
+
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#b8d4f0,#8b7ec8)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/letters.jpg" alt="Объёмные буквы" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>Объёмные буквы</h3>
+              <p>от … ₽/см</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article>
+
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#f5c9c0,#e8a0b8)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/xbanner.jpg" alt="X-баннер (паук)" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>X-баннер (паук)</h3>
+              <p>от … ₽</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article>
+
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#c8e8d8,#9ec9b8)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/stander.jpg" alt="Штендер рекламный" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>Штендер рекламный</h3>
+              <p>от … ₽</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article>
+
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#e8e8e8,#cfcfcf)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/rollup.jpg" alt="Roll-Up / РоллАп" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>Roll-Up / РоллАп</h3>
+              <p>от … ₽</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article>
+
+        <article class="rx-service">
+          <div class="rx-service-circle" style="background:linear-gradient(135deg,#dcc4f0,#e8a8c8)">
+            <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/services/approval.jpg" alt="Согласование вывески" loading="lazy">
+          </div>
+          <div class="rx-service-plaque">
+            <div>
+              <h3>Согласование вывески</h3>
+              <p>от … ₽</p>
+            </div>
+            <a href="#rx-calc">Узнать цену</a>
+          </div>
+        </article></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="rx-about" id="rx-about">
+  <div class="rx-wrap">
+    <div class="rx-about-frame">
+      <div class="rx-about-card">
+        <div class="rx-about-media"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/hero/about.jpg" alt="Цех Рекламикс"></div>
+        <div class="rx-about-body">
+          <h2 class="rx-display">Наружная реклама в Иваново: от идеи до установки на объекте</h2>
+          <p class="rx-p">Спроектируем, произведём и смонтируем рекламу под ваши задачи — по городу и области. Держим сроки, отвечаем за качество и внешний вид конструкций.</p>
+          <p class="rx-ul-title">Чем можем усилить ваш рекламный контур:</p>
+          <ul><li><span></span>Печать широкоформатная и для интерьеров</li>
+<li><span></span>Изготовление конструкций, согласование и монтаж</li>
+<li><span></span>Городские носители: транспорт, щиты, LED-экраны, лифты</li>
+<li><span></span>Полиграфическая продукция</li>
+<li><span></span>Разработка макетов и фирменного стиля</li>
+<li><span></span>Навигация, таблички и штендеры</li></ul>
+          <div class="rx-about-actions">
+            <a class="rx-btn rx-btn-coral" href="#rx-contacts">Связаться</a>
+            <div>
+              <p style="margin:0 0 8px;font-size:14px;color:var(--rx-muted)">Удобнее в мессенджере:</p>
+              <div class="rx-socials">
+                <a class="rx-social" style="background:#25D366" href="https://wa.me/79010344766" target="_blank" rel="noreferrer" aria-label="WhatsApp">WA</a>
+                <a class="rx-social" style="background:#0077FF" href="#rx-contacts" aria-label="VK">VK</a>
+                <a class="rx-social" style="background:#229ED9" href="#rx-contacts" aria-label="Telegram">TG</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALC ===== -->
+<section class="rx-calc" id="rx-calc">
+  <div class="rx-calc-blobs" aria-hidden="true"></div>
+  <div class="rx-calc-inner">
+    <h2>Рассчитайте стоимость вывески за 2 минуты и выберите подарок</h2>
+    <div class="rx-calc-card">
+      <div>
+        <h3>Расчёт вывески без макета</h3>
+        <div class="rx-tabs">
+          <button type="button" class="is-active" data-layout="0">Нет макета</button>
+          <button type="button" data-layout="1">Есть макет</button>
+        </div>
+        <div class="rx-fields">
+          <label class="rx-field"><span>Вид</span>
+            <select id="rx-type">
+              <option>Объёмные буквы</option>
+              <option>Световой короб</option>
+              <option>Вывеска</option>
+              <option>Неон</option>
+              <option>Табличка</option>
+            </select>
+          </label>
+          <label class="rx-field"><span>Тип</span>
+            <select id="rx-kind">
+              <option>Уличная</option>
+              <option>Интерьерная</option>
+            </select>
+          </label>
+        </div>
+        <fieldset class="rx-extras">
+          <legend>Дополнительно</legend>
+          <div class="rx-extras-grid" id="rx-extras">
+            <label><input type="checkbox" value="Замер"> Замер</label>
+            <label><input type="checkbox" value="Дизайн"> Дизайн</label>
+            <label><input type="checkbox" value="Проект / паспорт"> Проект / паспорт</label>
+            <label><input type="checkbox" value="Согласование"> Согласование</label>
+            <label><input type="checkbox" value="Монтаж"> Монтаж</label>
+            <label><input type="checkbox" value="Демонтаж"> Демонтаж</label>
+          </div>
+        </fieldset>
+        <div class="rx-range">
+          <div class="rx-range-top"><span style="font-weight:600">Укажите примерную длину (м)</span><span class="rx-range-val" id="rx-length-val">3 м</span></div>
+          <input type="range" id="rx-length" min="1" max="20" value="3">
+        </div>
+        <fieldset class="rx-gift">
+          <legend>Выберите подарок</legend>
+          <div class="rx-gift-radios">
+            <label><input type="radio" name="rx-gift" value="montage"> −20% на монтаж</label>
+            <label><input type="radio" name="rx-gift" value="neon"> Неоновая вывеска</label>
+          </div>
+        </fieldset>
+        <div class="rx-estimate">
+          <p class="rx-muted">Ориентировочно «от»</p>
+          <p class="rx-price" id="rx-price">от 43 900 ₽</p>
+          <p class="rx-note">Точная смета после замера. Сейчас заявки на звонок не собираем — позвоните сами.</p>
+          <a class="rx-call" href="tel:+79010344766">Позвонить · +7 901-034-4766</a>
+        </div>
+        <a class="rx-cta-orange" href="tel:+79010344766">Получить расчёт и подарок</a>
+      </div>
+      <div>
+        <div class="rx-gifts">
+          <button type="button" class="rx-gift-card" data-gift="montage">
+            <div class="rx-gift-head"><small>Подарок №1</small><strong>Скидка на монтаж 20%</strong></div>
+            <div class="rx-gift-img" style="background-image:url('https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/calc/gift-montage.jpg')"></div>
+          </button>
+          <button type="button" class="rx-gift-card" data-gift="neon">
+            <div class="rx-gift-head"><small>Подарок №2</small><strong>Неоновая вывеска бесплатно*</strong></div>
+            <div class="rx-gift-img" style="background-image:url('https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/calc/gift-neon.jpg')"></div>
+          </button>
+        </div>
+        <p class="rx-gift-note">*один цвет, длина кривой до 2 метров. Условия подарка уточняйте при звонке.</p>
+        <a class="rx-prod-link" href="#rx-about"><span>Посмотрите производство, где будем изготавливать вывеску</span><span class="rx-play">▶</span></a>
+        <div class="rx-yandex"><strong>Яндекс</strong> <span style="color:#f59e0b">5★</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="rx-portfolio" id="rx-portfolio">
+  <div class="rx-wrap">
+    <div class="rx-port-ctas">
+      <a class="rx-btn-coral" style="background:var(--rx-coral)" href="#rx-calc">Заказать расчёт</a>
+      <a class="rx-black" href="#rx-contacts">Отзывы</a>
+    </div>
+    <div class="rx-port-head">
+      <h2 class="rx-display">Портфолио</h2>
+      <p>8 работ с водяным знаком «Рекламикс». Остальные — по кнопке «Увидеть больше» (Яндекс.Диск добавим позже).</p>
+    </div>
+    <div class="rx-port-grid">
+        <figure class="rx-port-item rx-port-tall">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/storefront.jpg" alt="Вывеска · витрина" loading="lazy">
+          <figcaption>Вывеска · витрина</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/office.jpg" alt="Офисная идентификация" loading="lazy">
+          <figcaption>Офисная идентификация</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/interior.jpg" alt="Интерьерная реклама" loading="lazy">
+          <figcaption>Интерьерная реклама</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/lobby.jpg" alt="Лобби и ресепшен" loading="lazy">
+          <figcaption>Лобби и ресепшен</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/workspace.jpg" alt="Брендирование пространства" loading="lazy">
+          <figcaption>Брендирование пространства</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/meeting.jpg" alt="Корпоративный объект" loading="lazy">
+          <figcaption>Корпоративный объект</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/building.jpg" alt="Фасадная конструкция" loading="lazy">
+          <figcaption>Фасадная конструкция</figcaption>
+        </figure>
+
+        <figure class="rx-port-item">
+          <img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/images/portfolio/facade.jpg" alt="Наружная вывеска" loading="lazy">
+          <figcaption>Наружная вывеска</figcaption>
+        </figure></div>
+    <div class="rx-more"><a href="#rx-portfolio">Увидеть больше</a></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="rx-footer" id="rx-contacts">
+  <div class="rx-footer-orb"></div>
+  <div class="rx-wrap rx-footer-grid">
+    <div>
+      <a href="#rx-hero"><img src="https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/logos/logo-color-dark.png" alt="Рекламикс"></a>
+      <p>Рекламное агентство и производство наружной рекламы в Иваново. Полный цикл: дизайн, изготовление, согласование и монтаж.</p>
+      <p class="rx-copy">© 2026 РПК «Рекламикс». Все права защищены.</p>
+    </div>
+    <div>
+      <h3>Контакты</h3>
+      <ul>
+        <li><a href="tel:+79010344766"><span class="rx-fdot"></span>+7 901-034-4766</a></li>
+        <li><a href="mailto:info@reklamiks.ru"><span class="rx-fdot"></span>info@reklamiks.ru</a></li>
+        <li><span class="rx-fdot"></span><span>г. Иваново и Ивановская область</span></li>
+        <li><span class="rx-fdot"></span>Директор: И. А. Карасева</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Режим работы</h3>
+      <p style="margin-top:16px">пн–пт: с 9:00 до 18:00</p>
+      <p style="margin-top:4px">сб–вс: выходной</p>
+      <p class="rx-coral-note">Связаться с нами можно в рабочие часы</p>
+      <h3 style="margin-top:32px">На сайте</h3>
+      <ul class="rx-footer-nav"><li><a class="" href="#rx-hero">Главная</a></li>
+<li><a class="" href="#rx-services">Услуги и цены</a></li>
+<li><a class="" href="#rx-about">О нас</a></li>
+<li><a class="" href="#rx-calc">Расчёт цены</a></li>
+<li><a class="" href="#rx-portfolio">Портфолио</a></li>
+<li><a class="" href="#rx-contacts">Контакты</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<aside class="rx-sidebar" aria-label="Мессенджеры">
+  <a style="background:var(--rx-wa)" href="https://wa.me/79010344766" target="_blank" rel="noreferrer" aria-label="WhatsApp">WA</a>
+  <a style="background:var(--rx-vk)" href="#rx-contacts" aria-label="VK">VK</a>
+  <a style="background:var(--rx-tg)" href="#rx-contacts" aria-label="Telegram">TG</a>
+</aside>
+<a class="rx-fab" href="tel:+79010344766" aria-label="Позвонить" title="Позвонить">☎</a>
+
+<script>
+(function(){
+  var root=document.getElementById('reclamix-landing');
+  if(!root) return;
+  // Mobile menu
+  var burger=document.getElementById('rx-burger');
+  var mobile=document.getElementById('rx-mobile');
+  var closeBtn=document.getElementById('rx-mobile-close');
+  function setOpen(v){
+    mobile.classList.toggle('is-open',v);
+    burger.classList.toggle('is-open',v);
+    burger.setAttribute('aria-expanded',v?'true':'false');
+    root.classList.toggle('rx-lock',v);
+  }
+  burger&&burger.addEventListener('click',function(){setOpen(!mobile.classList.contains('is-open'));});
+  closeBtn&&closeBtn.addEventListener('click',function(){setOpen(false);});
+  mobile&&mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setOpen(false);});});
+
+  // Calculator
+  var hasLayout=false, gift=null;
+  var rates={"Объёмные буквы":120,"Световой короб":4500,"Вывеска":8000,"Неон":3500,"Табличка":1500};
+  var typeEl=document.getElementById('rx-type');
+  var kindEl=document.getElementById('rx-kind');
+  var lengthEl=document.getElementById('rx-length');
+  var lengthVal=document.getElementById('rx-length-val');
+  var priceEl=document.getElementById('rx-price');
+  var extras=document.getElementById('rx-extras');
+  function calc(){
+    var type=typeEl.value, kind=kindEl.value, length=+lengthEl.value;
+    var base=rates[type]||1000;
+    var perMeter=type==='Объёмные буквы'||type==='Неон';
+    var total=perMeter?base*length*100:base+length*1200;
+    if(kind==='Уличная') total*=1.15;
+    if(!hasLayout) total+=2500;
+    var n=extras.querySelectorAll('input:checked').length;
+    total+=n*1800;
+    total=Math.round(total/100)*100;
+    priceEl.textContent='от '+total.toLocaleString('ru-RU')+' ₽';
+    lengthVal.textContent=length+' м';
+  }
+  root.querySelectorAll('.rx-tabs button').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      root.querySelectorAll('.rx-tabs button').forEach(function(b){b.classList.remove('is-active');});
+      btn.classList.add('is-active');
+      hasLayout=btn.getAttribute('data-layout')==='1';
+      calc();
+    });
+  });
+  [typeEl,kindEl,lengthEl].forEach(function(el){el&&el.addEventListener('input',calc);el&&el.addEventListener('change',calc);});
+  extras&&extras.addEventListener('change',calc);
+
+  function setGift(v){
+    gift=v;
+    root.querySelectorAll('input[name="rx-gift"]').forEach(function(r){r.checked=r.value===v;});
+    root.querySelectorAll('.rx-gift-card').forEach(function(card){
+      var id=card.getAttribute('data-gift');
+      card.classList.toggle('is-selected', gift===id);
+      card.classList.toggle('is-dim', gift!==null && gift!==id);
+    });
+  }
+  root.querySelectorAll('input[name="rx-gift"]').forEach(function(r){
+    r.addEventListener('change',function(){setGift(r.value);});
+  });
+  root.querySelectorAll('.rx-gift-card').forEach(function(card){
+    card.addEventListener('click',function(){setGift(card.getAttribute('data-gift'));});
+  });
+  calc();
+})();
+</script>
+</div>
+<!-- /RECLAMIX TILDA HTML EMBED -->
+
+</body>
+</html>
