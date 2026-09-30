@@ -58,17 +58,9 @@
 #reclamix-landing .rx-tagline{
   display:none;text-align:center;font-family:"GOST Type BU","Segoe UI",system-ui,sans-serif;
   font-weight:700;font-synthesis:weight;text-transform:uppercase;letter-spacing:.01em;
-  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;
-  background-image:linear-gradient(92deg,#111 0%,#111 6%,#e30513 12%,#ff4a3a 18%,#e30513 24%,#111 30%,#111 38%,#d02e1f 44%,#ff4a3a 50%,#111 50%,#111 56%,#e30513 62%,#ff4a3a 68%,#e30513 74%,#111 80%,#111 88%,#d02e1f 94%,#111 100%)!important;
-  background-size:200% 100%!important;background-position:0% 50%;
-  -webkit-background-clip:text!important;background-clip:text!important;
-  color:transparent!important;-webkit-text-fill-color:transparent!important;
-  animation:rx-tagline 4.5s linear infinite;
-  filter:drop-shadow(.35px 0 0 rgb(10 10 10 / 35%)) drop-shadow(-.35px 0 0 rgb(227 5 19 / 25%));
-  will-change:background-position;
+  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;color:var(--rx-coral);
 }
 @media(min-width:1024px){#reclamix-landing .rx-tagline{display:block}}
-@keyframes rx-tagline{from{background-position:0% 50%}to{background-position:100% 50%}}
 #reclamix-landing .rx-header-ctas{display:none;gap:10px;align-items:center}
 @media(min-width:768px){#reclamix-landing .rx-header-ctas{display:flex}}
 #reclamix-landing .rx-header-ctas .rx-btn{padding:8px 14px;font-size:13px}
@@ -299,8 +291,7 @@
 #reclamix-landing .rx-fab:hover{background:var(--rx-red);transform:scale(1.05)}
 
 @media (prefers-reduced-motion:reduce){
-  #reclamix-landing .rx-marquee,#reclamix-landing .rx-tagline,#reclamix-landing .rx-about-frame,#reclamix-landing .rx-calc-blobs,#reclamix-landing .rx-call{animation:none!important}
-  #reclamix-landing .rx-tagline{background-position:40% 50%}
+  #reclamix-landing .rx-marquee,#reclamix-landing .rx-about-frame,#reclamix-landing .rx-calc-blobs,#reclamix-landing .rx-call{animation:none!important}
 }
 </style>
 
