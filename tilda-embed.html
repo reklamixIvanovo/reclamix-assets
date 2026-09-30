@@ -5,6 +5,7 @@
 @font-face{font-family:"GOST Type BU";src:url("https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/fonts/gost-bu.ttf") format("truetype");font-weight:400 700;font-display:swap}
 @font-face{font-family:"Plakat Titul";src:url("https://cdn.jsdelivr.net/gh/reklamixIvanovo/reclamix-assets@main/fonts/plakat-titul.ttf") format("truetype");font-weight:400;font-display:swap}
 #reclamix-landing,#reclamix-landing *{box-sizing:border-box}
+#reclamix-landing ul,#reclamix-landing ol{margin:0;padding:0;list-style:none}
 #reclamix-landing{
   --rx-red:#e30513;--rx-coral:#d02e1f;--rx-black:#0a0a0a;--rx-ink:#1a1a1a;
   --rx-muted:#6b6b6b;--rx-wa:#25d366;--rx-vk:#0077ff;--rx-tg:#229ed9;--rx-calc:#f07a1a;
@@ -20,12 +21,12 @@
 #reclamix-landing .rx-wrap-wide{max-width:1280px}
 
 /* Header */
-#reclamix-landing .rx-usp{background:var(--rx-coral);color:#fff;font-size:12px}
-@media(min-width:640px){#reclamix-landing .rx-usp{font-size:13px}}
-#reclamix-landing .rx-usp-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0}
-#reclamix-landing .rx-usp-list{display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap;min-width:0;flex:1}
-#reclamix-landing .rx-usp-list li{display:flex;align-items:center;gap:10px;font-weight:500}
-#reclamix-landing .rx-usp-list .rx-sep{width:1px;height:12px;background:rgba(255,255,255,.35)}
+#reclamix-landing .rx-usp{background:var(--rx-coral);color:#fff;font-size:11px;line-height:1.2}
+@media(min-width:640px){#reclamix-landing .rx-usp{font-size:12px}}
+#reclamix-landing .rx-usp-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 0}
+#reclamix-landing .rx-usp-list{display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap;min-width:0;flex:1;list-style:none;margin:0;padding:0}
+#reclamix-landing .rx-usp-list li{display:flex;align-items:center;gap:10px;font-weight:500;margin:0;padding:0}
+#reclamix-landing .rx-usp-list .rx-sep{width:1px;height:10px;background:rgba(255,255,255,.35);flex-shrink:0}
 #reclamix-landing .rx-usp-third{display:none}
 @media(min-width:420px){#reclamix-landing .rx-usp-third{display:flex}}
 #reclamix-landing .rx-usp-short{display:inline}
