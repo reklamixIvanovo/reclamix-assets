@@ -316,25 +316,32 @@
 #reclamix-landing .rx-port-head{margin-top:32px;text-align:center}
 #reclamix-landing .rx-port-head h2{margin:0;font-size:clamp(1.35rem,3vw,2rem)}
 #reclamix-landing .rx-port-head p{margin:8px 0 0;font-size:14px;color:var(--rx-muted)}
-/* портфолио: 3 колонки и masonry-tall как на десктопе — на всех ширинах */
+/* портфолио: мобилка 2 кол. без обрезки; от 640px — 3 кол. masonry как раньше */
 #reclamix-landing .rx-port-grid{
-  margin-top:24px;display:grid;grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:repeat(3,minmax(110px,1fr));gap:8px
+  margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:10px
 }
+#reclamix-landing .rx-port-item{position:relative;overflow:hidden;border-radius:6px;background:#111}
+#reclamix-landing .rx-port-tall{grid-row:auto}
+#reclamix-landing .rx-port-item img{
+  width:100%;height:auto;display:block;object-fit:contain;object-position:center;
+  transition:transform .5s
+}
+#reclamix-landing .rx-port-item:hover img{transform:scale(1.04)}
+#reclamix-landing .rx-port-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px;font-size:11px;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
 @media(min-width:640px){
-  #reclamix-landing .rx-port-grid{margin-top:32px;grid-template-rows:repeat(3,minmax(160px,1fr));gap:12px}
+  #reclamix-landing .rx-port-grid{
+    margin-top:32px;grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:repeat(3,minmax(160px,1fr));gap:12px
+  }
+  #reclamix-landing .rx-port-item{min-height:0;height:100%}
+  #reclamix-landing .rx-port-tall{grid-row:span 2;min-height:0}
+  #reclamix-landing .rx-port-item img{height:100%;min-height:160px;object-fit:cover}
+  #reclamix-landing .rx-port-item figcaption{padding:12px;font-size:14px}
 }
 @media(min-width:1024px){
   #reclamix-landing .rx-port-grid{grid-template-rows:repeat(3,minmax(200px,1fr));gap:16px}
+  #reclamix-landing .rx-port-item img{min-height:200px}
 }
-#reclamix-landing .rx-port-item{position:relative;overflow:hidden;border-radius:6px;background:#000;min-height:0;height:100%}
-#reclamix-landing .rx-port-tall{grid-row:span 2;min-height:0}
-#reclamix-landing .rx-port-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;min-height:110px;display:block}
-@media(min-width:640px){#reclamix-landing .rx-port-item img{min-height:160px}}
-@media(min-width:1024px){#reclamix-landing .rx-port-item img{min-height:200px}}
-#reclamix-landing .rx-port-item:hover img{transform:scale(1.04)}
-#reclamix-landing .rx-port-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px;font-size:11px;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
-@media(min-width:640px){#reclamix-landing .rx-port-item figcaption{padding:12px;font-size:14px}}
 #reclamix-landing .rx-more{margin-top:32px;display:flex;justify-content:center}
 #reclamix-landing .rx-more a{border:2px solid var(--rx-coral);background:#fff;color:var(--rx-coral);border-radius:6px;padding:14px 32px;font-size:14px;font-weight:700;text-transform:uppercase}
 #reclamix-landing .rx-more a:hover{background:var(--rx-coral);color:#fff}
