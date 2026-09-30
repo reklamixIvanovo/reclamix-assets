@@ -274,7 +274,12 @@
 #reclamix-landing .rx-footer a:hover{color:var(--rx-coral)}
 #reclamix-landing .rx-fdot{width:8px;height:8px;border-radius:50%;background:var(--rx-coral);flex-shrink:0}
 #reclamix-landing .rx-footer .rx-coral-note{margin-top:12px;font-weight:600;color:var(--rx-coral);font-size:14px}
-#reclamix-landing .rx-footer-nav{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:rgba(255,255,255,.75)}
+/* Важно: выше специфичность, чем у .rx-footer ul — иначе меню становится колонкой */
+#reclamix-landing .rx-footer ul.rx-footer-nav{
+  margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:row;flex-wrap:wrap;
+  gap:8px 16px;font-size:14px;color:rgba(255,255,255,.75)
+}
+#reclamix-landing .rx-footer ul.rx-footer-nav li{display:inline-flex}
 
 /* Floating */
 #reclamix-landing .rx-sidebar{display:none;position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:30;flex-direction:column;border-radius:8px 0 0 8px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2)}
