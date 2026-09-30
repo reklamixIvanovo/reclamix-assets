@@ -48,11 +48,13 @@
 @media(min-width:1024px){#reclamix-landing .rx-logo img{height:56px}}
 #reclamix-landing .rx-tagline{
   display:none;text-align:center;font-family:"GOST Type BU","Segoe UI",system-ui,sans-serif;
-  font-weight:700;font-synthesis:weight;text-transform:uppercase;letter-spacing:.01em;
-  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;
-  background-image:linear-gradient(100deg,#9a1212 0%,#d02e1f 28%,#ff5c4a 50%,#e30513 72%,#9a1212 100%);
+  font-weight:900;font-synthesis:weight;text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(18px,1.45vw,23px);line-height:1.15;margin:0;
+  background-image:linear-gradient(100deg,#0a0a0a 0%,#1a1a1a 18%,#e30513 42%,#ff3b2e 50%,#e30513 58%,#1a1a1a 82%,#0a0a0a 100%);
   background-size:220% 100%;-webkit-background-clip:text;background-clip:text;
-  color:transparent;-webkit-text-fill-color:transparent;animation:rx-tagline-sheen 6s ease-in-out infinite;
+  color:transparent;-webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.35px rgb(10 10 10 / 35%);paint-order:stroke fill;
+  animation:rx-tagline-sheen 6s ease-in-out infinite;
 }
 @media(min-width:1024px){#reclamix-landing .rx-tagline{display:block}}
 @keyframes rx-tagline-sheen{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}

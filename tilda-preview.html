@@ -58,9 +58,13 @@
 #reclamix-landing .rx-tagline{
   display:none;text-align:center;font-family:"GOST Type BU","Segoe UI",system-ui,sans-serif;
   font-weight:700;font-synthesis:weight;text-transform:uppercase;letter-spacing:.01em;
-  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;color:var(--rx-coral);
+  font-size:clamp(17px,1.35vw,22px);line-height:1.2;margin:0;
+  background-image:linear-gradient(100deg,#9a1212 0%,#d02e1f 28%,#ff5c4a 50%,#e30513 72%,#9a1212 100%);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;
+  color:transparent;-webkit-text-fill-color:transparent;animation:rx-tagline-sheen 6s ease-in-out infinite;
 }
 @media(min-width:1024px){#reclamix-landing .rx-tagline{display:block}}
+@keyframes rx-tagline-sheen{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 #reclamix-landing .rx-header-ctas{display:none;gap:10px;align-items:center}
 @media(min-width:768px){#reclamix-landing .rx-header-ctas{display:flex}}
 #reclamix-landing .rx-header-ctas .rx-btn{padding:8px 14px;font-size:13px}
